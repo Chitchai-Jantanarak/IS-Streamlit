@@ -11,9 +11,5 @@ __pycache__/
 .vscode/
 .idea/
 
-# Data files (optional, depends on your project)
-*.csv
-*.xlsx
-
 # Logs
 *.log

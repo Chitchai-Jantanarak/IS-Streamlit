@@ -3,7 +3,7 @@
 ## Project Setup
 
 ### Prerequisites
-- Python 3+
+- Python 3.11.11
 - pip
 - virtualenv
 

@@ -21,8 +21,8 @@ def sidebar() -> None:
     st.sidebar
     # Section 2
     st.sidebar.subheader("2. Neural Networks")
-    st.sidebar.link_button("Explaination", "https://openai.com", type="tertiary")
-    st.sidebar.link_button("Model", "https://openai.com", type="tertiary")
+    st.sidebar.link_button("Explaination", "https://openai.com", type="primary", use_container_width=1)
+    st.sidebar.link_button("Model", "https://openai.com", type="primary", use_container_width=1)
     st.sidebar.markdown("[Credit Card](#credit-card)")
     st.sidebar.markdown("[PayPal](#paypal)")
 

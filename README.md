@@ -11,8 +11,10 @@
 1. Clone the repository
 2. Create a virtual environment
 ```bash
+# Your current versions
 python -m venv venv
-py -3.10 -m venv venv # DEFINE VERSIONS
+# DEFINE VERSIONS
+py -3.10 -m venv venv 
 ```
 3. Activate virtual environment
 ```bash

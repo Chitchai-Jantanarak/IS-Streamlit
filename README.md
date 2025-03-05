@@ -27,5 +27,5 @@ pip install -e .  # Installs from setup.py
 ```
 5. Run the Streamlit
 ```bash
-streamlit run src/__init__.py
+streamlit run src/main.py
 ```

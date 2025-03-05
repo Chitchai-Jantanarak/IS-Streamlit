@@ -3,7 +3,7 @@
 ## Project Setup
 
 ### Prerequisites
-- Python 3.11.11
+- Python 3.10.11
 - pip
 - virtualenv
 
@@ -12,6 +12,7 @@
 2. Create a virtual environment
 ```bash
 python -m venv venv
+py -3.10 -m venv venv # DEFINE VERSIONS
 ```
 3. Activate virtual environment
 ```bash

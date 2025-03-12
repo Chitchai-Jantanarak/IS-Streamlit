@@ -1,0 +1,103 @@
+{
+    "training_metrics" : [
+        {
+            "epoch": 1,
+            "trainAccuracy": 0.6166,
+            "valAccuracy": 0.6250,
+            "trainLoss": 0.9245,
+            "valLoss": 0.6426,
+            "trainPrecision": 0.7620,
+            "valPrecision": 0.5714,
+            "trainRecall": 0.7111,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 2,
+            "trainAccuracy": 0.6945,
+            "valAccuracy": 0.6875,
+            "trainLoss": 0.6338,
+            "valLoss": 0.5394,
+            "trainPrecision": 0.7766,
+            "valPrecision": 0.6154,
+            "trainRecall": 0.8275,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 3,
+            "trainAccuracy": 0.7824,
+            "valAccuracy": 0.6875,
+            "trainLoss": 0.4613,
+            "valLoss": 0.4570,
+            "trainPrecision": 0.8263,
+            "valPrecision": 0.6154,
+            "trainRecall": 0.8975,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 4,
+            "trainAccuracy": 0.8040,
+            "valAccuracy": 0.7500,
+            "trainLoss": 0.3864,
+            "valLoss": 0.4063,
+            "trainPrecision": 0.8371,
+            "valPrecision": 0.6667,
+            "trainRecall": 0.9163,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 5,
+            "trainAccuracy": 0.8661,
+            "valAccuracy": 0.8125,
+            "trainLoss": 0.2950,
+            "valLoss": 0.4023,
+            "trainPrecision": 0.8874,
+            "valPrecision": 0.7273,
+            "trainRecall": 0.9403,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 6,
+            "trainAccuracy": 0.9020,
+            "valAccuracy": 0.8750,
+            "trainLoss": 0.2268,
+            "valLoss": 0.3315,
+            "trainPrecision": 0.9273,
+            "valPrecision": 0.8000,
+            "trainRecall": 0.9432,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 7,
+            "trainAccuracy": 0.9294,
+            "valAccuracy": 0.8750,
+            "trainLoss": 0.1804,
+            "valLoss": 0.4322,
+            "trainPrecision": 0.9489,
+            "valPrecision": 0.8000,
+            "trainRecall": 0.9572,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 8,
+            "trainAccuracy": 0.9389,
+            "valAccuracy": 0.8750,
+            "trainLoss": 0.1681,
+            "valLoss": 0.5333,
+            "trainPrecision": 0.9550,
+            "valPrecision": 0.8000,
+            "trainRecall": 0.9642,
+            "valRecall": 1.0000
+        },
+        {
+            "epoch": 9,
+            "trainAccuracy": 0.9447,
+            "valAccuracy": 0.8750,
+            "trainLoss": 0.1440,
+            "valLoss": 0.4203,
+            "trainPrecision": 0.9542,
+            "valPrecision": 0.8000,
+            "trainRecall": 0.9728,
+            "valRecall": 1.0000
+        }
+    ]
+}

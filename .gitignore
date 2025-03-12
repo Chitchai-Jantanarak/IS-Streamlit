@@ -1,0 +1,20 @@
+# Virtual Environment
+venv/
+*.venv
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# data train image
+data/neural_network/chest_xray/*
+!data/neural_network/chest_xray/test
+train/neural_network/pneumonia_model.h5

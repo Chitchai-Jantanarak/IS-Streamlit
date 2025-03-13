@@ -1,5 +1,6 @@
-import io
 import os
+import glob
+import re
 import random
 import streamlit as st
 import tensorflow as tf
@@ -14,11 +15,41 @@ st.set_page_config(page_title="Pneumonia Detection", page_icon="🫁")
 st.title("Pneumonia Detection")
 st.markdown("#### Use the buttons below to select or upload a image.")
 
-# Load model
+# Load & incorporate model
 @st.cache_resource
 def load_pneumonia_model():
+
+    def extract_file_number(filename):
+        match = re.search(r'model_part_(\d+)\.pth', filename)
+        if match:
+            return int(match.group(1))
+        return 0
+
+    model_parts_path = "./data/neural_network/model_part_*"
+    output_model_path = "./data/neural_network/pneumonia_model.h5"
+
     try:
-        model = load_model('./data/neural_network/pneumonia_model.h5')
+        # Model existed on cache
+        if os.path.exists(output_model_path):
+            print("Loading existing model...")
+            model = load_model(output_model_path)
+            return model
+
+        os.makedirs(os.path.dirname(output_model_path), exist_ok=True)
+
+        parts = sorted(glob.glob(model_parts_path), key=extract_file_number)
+        if not parts:
+            print(f"No model parts found at {model_parts_path}")
+            return None
+            
+        st.info(f"Merging {len(parts)} model parts...")
+        with open(output_model_path, "wb") as output_file:
+            for part in parts:
+                with open(part, "rb") as chunk:
+                    output_file.write(chunk.read())
+                    
+        model = load_model(output_model_path)
+        print("Model loaded!")
         return model
     except Exception as e:
         st.error(f"Failed to load model: {e}")

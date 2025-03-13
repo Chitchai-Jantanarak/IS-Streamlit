@@ -15,6 +15,6 @@ __pycache__/
 *.log
 
 # data train image
-data/neural_network/chest_xray/*
+# data/neural_network/chest_xray/* # too large dataset kub please leave me alone :( 
 !data/neural_network/chest_xray/test
 train/neural_network/pneumonia_model.h5

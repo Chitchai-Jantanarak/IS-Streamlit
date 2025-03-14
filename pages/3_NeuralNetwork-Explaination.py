@@ -293,7 +293,7 @@ def workflow() -> None :
 
 
     st.markdown("""
-    ###### สามารถดูลำดับขั้นตอนการทำทั้งหมดได้ [ที่นี่](https://github.com/Chitchai-Jantanarak/IS-Streamlit/blob/main/train/neural_network/__builder_model.py)
+    ###### สามารถดูลำดับขั้นตอนการทำทั้งหมดได้ [ที่นี่](https://github.com/Chitchai-Jantanarak/IS-Streamlit/blob/main/train/neural_network/builder_model.py)
     ---
     """)
 
